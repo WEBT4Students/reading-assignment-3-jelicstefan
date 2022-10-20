@@ -367,9 +367,30 @@
         </ol>
         <h2>CSS for Lists</h2>
         <ol>
-            <li><b>Make bullet a square</b></li>
+            <li><b>Make bullet a square</b>
             <br>
-
+            list-style-type: square;
+            </li>
+            <br>
+            <li><b>Make bullet an image named "my-bullet.png"</b>
+            <br>
+            list-style-image: url("example.png");
+            </li>
+            <br>
+            <li><b>Make bullet an uppercase roman number</b>
+            <br>
+            ist-style-type: upper-roman;
+            </li>
+            <br>
+            <li><b>Set bullet position to be inside the list item's text flow</b>
+            <br>
+            list-style-position: inside;
+            </li>
+            <br>
+            <li><b>Set bullet position to be outside the list item's text flow</b>
+            <br>
+            list-style-position: outside;
+            </li>           
         </ol>
         <h2>HTML for Tables</h2>
         <ol>
@@ -382,20 +403,35 @@
                     <li>a table body: >tbody></li>
                     <li>a table cell: >td></li>
                     <li>a table footer: >tfoot></li>
-                    <li>a table footer cell: ></li>
+                    <li>a table footer cell: ><br>
+                        >tfoot><br>
+                            >tr><br>
+                            >th scope="row">Totals<br>
+                            >td>21,000<br>
+                            >/tr><br>
+                            >/tfoot><br>
+                    </li>
                 </ul>
             </li>
             <h2>CSS for Tables</h2>
             <ol>
                 <li><b>Black dotted border of 1 px width.</b><br>
-                <br>
                 table, th, td {<br>
-                border-style: 1px dotted;<br>
+                border: 1px dotted;<br>
                 }
                 </li>
                 <br>
-                <li><b></b>
-
+                <li><b>Solid border of 1 px width having a red color and rounded corners.</b>
+                    <br>
+                    border: 1px solid;<br>
+                    border-color: red;<br>
+                    border-radius: 10px;
+                </li>
+                <br>
+                <li>
+                    <b>Merge the borders of table cells so that they appear as one line.</b>
+                    <br>
+                    border-collapse: collapse;
                 </li>
             </ol>
         </ol>
